@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
-export default function useFetch(url) {
+export default function useFetch(id) {
+    const url = `https://api.jsonbin.io/v3/b/${id}`;
     const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 

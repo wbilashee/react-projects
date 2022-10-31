@@ -3,11 +3,11 @@ import useFetch from "../../useFetch";
 import Review from "./Review";
 import "./Reviews.scss";
 import loading from "../../images/loading.gif";
-const url = "https://api.jsonbin.io/v3/b/636261232b3499323bf2d366";
+const binId = "636261232b3499323bf2d366";
 
 export default function Reviews() {
     const [index, setIndex] = useState(0);
-    const [reviews, isLoading] = useFetch(url);
+    const [reviews, isLoading] = useFetch(binId);
     const review = reviews[index];
 
     const checkIndex = (index) => {

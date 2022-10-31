@@ -1,8 +1,8 @@
-import Reviews from "./components/Reviews/Reviews";
+import Questions from "./components/Questions/Questions";
 
 function App() {
     return (
-        <Reviews />
+        <Questions />
     )
 }
 
