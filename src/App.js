@@ -1,8 +1,8 @@
-import Tours from "./components/Tours/Tours";
+import Reviews from "./components/Reviews/Reviews";
 
 function App() {
     return (
-        <Tours />
+        <Reviews />
     )
 }
 
