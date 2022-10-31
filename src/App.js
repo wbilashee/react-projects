@@ -1,8 +1,8 @@
-import Questions from "./components/Questions/Questions";
+import Menu from "./components/Menu/Menu";
 
 function App() {
     return (
-        <Questions />
+        <Menu />
     )
 }
 
