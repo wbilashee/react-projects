@@ -1,7 +1,9 @@
+import OurStaff from "./components/OurStaff/OurStaff";
+
 function App() {
     return (
-        <div></div>
-    );
+        <OurStaff />
+    )
 }
 
 export default App;
