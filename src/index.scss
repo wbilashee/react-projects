@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap");
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -9,6 +11,12 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+body {
+  font-size: 1rem;
+  background: #f1f5f8;
+  font-family: "Raleway", sans-serif;
 }
 
 button,
@@ -23,6 +31,17 @@ button,
 
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  @media screen and (max-width: 640px) {
+    font-size: 2rem;
   }
 }
 

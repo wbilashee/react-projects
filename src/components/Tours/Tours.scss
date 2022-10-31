@@ -1,0 +1,84 @@
+.container {
+  width: 85vw;
+  max-width: 40rem;
+  margin: 5rem auto;
+
+  @media screen and (max-width: 640px) {
+    margin: 3rem auto;
+  }
+
+  .button {
+    margin: auto;
+    display: flex;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+  }
+
+  .tours {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+
+    .tour {
+      background: white;
+      border-radius: 0.5rem;
+
+      &-img {
+        height: 20rem;
+
+        @media screen and (max-width: 640px) {
+          height: 15rem;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-top-left-radius: 0.5rem;
+          border-top-right-radius: 0.5rem;
+        }
+      }
+
+      &-desc {
+        padding: 2rem;
+
+        @media screen and (max-width: 640px) {
+          padding: 1.5rem;
+        }
+      }
+
+      &-status {
+        display: flex;
+        font-size: 1.05rem;
+        align-items: center;
+        justify-content: space-between;
+
+        .name {
+          font-weight: bold;
+        }
+
+        .price {
+          padding: 0.45rem;
+          font-weight: bold;
+          font-size: 0.9375rem;
+          border-radius: 0.5rem;
+          background: #f1f5f8;
+          letter-spacing: 0.05rem;
+          font-family: sans-serif;
+        }
+      }
+
+      .info {
+        color: #617d98;
+        line-height: 1.5;
+        margin: 1rem auto;
+
+        button {
+          color: #6bd9e7;
+        }
+      }
+    }
+  }
+}
