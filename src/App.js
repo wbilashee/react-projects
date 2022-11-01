@@ -1,8 +1,8 @@
-import Slider from "./components/Slider/Slider";
+import LoremIpsum from "./components/LoremIpsum/LoremIpsum";
 
 function App() {
     return (
-        <Slider />
+        <LoremIpsum />
     )
 }
 
