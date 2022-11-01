@@ -43,7 +43,7 @@ export default function Tours() {
     return (
         <section className="tours-container">
             <h2 className="title">Our Tours</h2>
-            {isLoading && <div className="loading">
+            {isLoading && <div className="section-loading">
                 <img src={loading} alt="loading" />
             </div>
             }

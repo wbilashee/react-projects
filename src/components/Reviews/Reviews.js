@@ -38,7 +38,7 @@ export default function Reviews() {
     return (
         <section className="reviews-container">
             <h2 className="title">Reviews</h2>
-            {isLoading && <div className="loading">
+            {isLoading && <div className="section-loading">
                 <img src={loading} alt="loading" />
             </div>}
             {!isLoading && review && <Review review={review} nextReview={nextReview} prevReview={prevReview} surprise={surprise} />}

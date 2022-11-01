@@ -11,7 +11,7 @@ export default function Questions() {
     return (
         <section className="questions-container">
             <h2 className="title">General Questions</h2>
-            {isLoading && <div className="loading">
+            {isLoading && <div className="section-loading">
                 <img src={loading} alt="loading" />
             </div>}
             <div className="questions">

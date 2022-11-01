@@ -1,8 +1,8 @@
-import Menu from "./components/Menu/Menu";
+import Tabs from "./components/Tabs/Tabs";
 
 function App() {
     return (
-        <Menu />
+        <Tabs />
     )
 }
 

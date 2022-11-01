@@ -35,7 +35,7 @@ export default function OurStaff() {
   return (
     <section className="staff-container">
       <h2>Our Staff</h2>
-      {isLoading && <div className="loading">
+      {isLoading && <div className="section-loading">
         <img src={loading} alt="loading" />
       </div>
       }
