@@ -36,7 +36,7 @@ export default function Reviews() {
     }
 
     return (
-        <section className="container">
+        <section className="reviews-container">
             <h2 className="title">Reviews</h2>
             {isLoading && <div className="loading">
                 <img src={loading} alt="loading" />

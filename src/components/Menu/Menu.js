@@ -17,7 +17,7 @@ export default function Menu() {
     }
 
     return (
-        <section className="container">
+        <section className="menu">
             <h2 className="title">Our Menu</h2>
             <div className="btn-container">
                 {categories.map((category, index) => {

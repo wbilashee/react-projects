@@ -1,4 +1,4 @@
-.container {
+.tours-container {
   width: 85vw;
   max-width: 40rem;
   margin: 5rem auto;
@@ -64,19 +64,19 @@
           font-weight: bold;
           font-size: 0.9375rem;
           border-radius: 0.5rem;
-          background: #f1f5f8;
           letter-spacing: 0.05rem;
           font-family: sans-serif;
+          background: var(--light-gray);
         }
       }
 
       .info {
-        color: #617d98;
         line-height: 1.5;
         margin: 1rem auto;
+        color: var(--bluish-gray);
 
         button {
-          color: #6bd9e7;
+          color: var(--skyblue);
         }
       }
     }

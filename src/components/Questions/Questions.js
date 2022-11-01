@@ -9,7 +9,7 @@ export default function Questions() {
     const [questions, isLoading] = useFetch(binId);
 
     return (
-        <section className="container">
+        <section className="questions-container">
             <h2 className="title">General Questions</h2>
             {isLoading && <div className="loading">
                 <img src={loading} alt="loading" />
