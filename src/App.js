@@ -1,8 +1,8 @@
-import Tabs from "./components/Tabs/Tabs";
+import Slider from "./components/Slider/Slider";
 
 function App() {
     return (
-        <Tabs />
+        <Slider />
     )
 }
 
