@@ -1,8 +1,8 @@
-import LoremIpsum from "./components/LoremIpsum/LoremIpsum";
+import ColorGen from "./components/ColorGen/ColorGen";
 
 function App() {
     return (
-        <LoremIpsum />
+        <ColorGen />
     )
 }
 
