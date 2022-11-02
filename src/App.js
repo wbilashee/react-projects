@@ -1,8 +1,8 @@
-import GroceryBud from "./components/GroceryBud/GroceryBud";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
     return (
-        <GroceryBud />
+        <Navbar />
     )
 }
 
