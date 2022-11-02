@@ -1,8 +1,8 @@
-import Navbar from "./components/Navbar/Navbar";
+import SideModal from "./components/SideModal/SideModal";
 
 function App() {
     return (
-        <Navbar />
+        <SideModal />
     )
 }
 
