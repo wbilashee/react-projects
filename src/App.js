@@ -1,8 +1,8 @@
-import ColorGen from "./components/ColorGen/ColorGen";
+import GroceryBud from "./components/GroceryBud/GroceryBud";
 
 function App() {
     return (
-        <ColorGen />
+        <GroceryBud />
     )
 }
 

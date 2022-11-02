@@ -1,0 +1,130 @@
+.grocery-bud {
+  width: 90vw;
+  max-width: 40rem;
+  min-height: 10rem;
+  margin: 5rem auto;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.875rem;
+  box-shadow: var(--light-shadow);
+
+  .alert {
+    display: grid;
+    height: 1.25rem;
+    text-align: center;
+    font-size: 0.85rem;
+    align-items: center;
+    border-radius: 0.25rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.625rem;
+    text-transform: capitalize;
+
+    &-danger {
+      color: #721c24;
+      background: #f8d7da;
+    }
+
+    &-success {
+      color: #155724;
+      background: #d4edda;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5625rem;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    margin: 1.875rem 0;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+      border: 0;
+      outline: 0;
+      width: 100%;
+      padding: 0.475rem;
+      font-size: 0.9375rem;
+      font-family: inherit;
+      background: var(--light-gray);
+    }
+
+    #grocery {
+      flex: 1;
+      padding-left: 1.5rem;
+      border-top-left-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+    }
+
+    #submit-btn {
+      flex: 0.15;
+      cursor: pointer;
+      background: var(--skyblue);
+      transition: var(--transition);
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .grocery {
+    &-container {
+      margin-top: 2rem;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      border-radius: 0.5rem;
+      margin-bottom: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      text-transform: capitalize;
+      transition: var(--transition);
+      justify-content: space-between;
+
+      &:hover {
+        color: var(--grayish-blue);
+        background: var(--light-gray);
+      }
+
+      &-title {
+        margin-bottom: 0;
+        letter-spacing: 2px;
+      }
+
+      .edit-btn,
+      .delete-btn {
+        margin: 0 0.35rem;
+        font-size: 0.8rem;
+      }
+
+      .edit-btn {
+        color: #6be675;
+        font-size: 0.9rem;
+      }
+
+      .delete-btn {
+        color: #e66b6b;
+      }
+    }
+
+    @at-root .grocery-container .clear-btn {
+      width: 6.25rem;
+      display: grid;
+      margin: 0 auto;
+      height: 1.875rem;
+      color: #e66b6b;
+      font-size: 0.85rem;
+      margin-top: 0.8rem;
+      align-items: center;
+      letter-spacing: 0.1rem;
+      text-transform: capitalize;
+    }
+  }
+}
