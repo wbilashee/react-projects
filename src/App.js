@@ -1,8 +1,8 @@
-import Cocktails from "./components/Cocktails/Cocktails";
+import MarkdownPreview from "./components/MarkdownPreview/MarkdownPreview";
 
 function App() {
     return (
-        <Cocktails />
+        <MarkdownPreview />
     )
 }
 
