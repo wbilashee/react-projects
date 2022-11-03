@@ -1,0 +1,145 @@
+.cart {
+  .nav {
+    height: 5rem;
+    display: grid;
+    color: white;
+    place-items: center;
+    background: var(--skyblue);
+
+    &-container {
+      width: 60vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-logo {
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    &-cart {
+      font-size: 2rem;
+      margin-top: 1rem;
+      position: relative;
+
+      &-amount {
+        position: absolute;
+        top: -0.85rem;
+        right: -0.85rem;
+        width: 1.75rem;
+        height: 1.75rem;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        background: #7db6cc;
+        justify-content: center;
+
+        p {
+          font-size: 1.15rem;
+          margin-top: 0.15rem;
+          font-family: sans-serif;
+        }
+      }
+    }
+  }
+
+  &-container {
+    width: 90vw;
+    max-width: 50rem;
+    margin: 4rem auto;
+
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 3rem;
+      text-align: center;
+      color: var(--grayish-blue);
+    }
+  }
+
+  &-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: cover;
+    }
+
+    h4 {
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      color: var(--grayish-blue);
+    }
+
+    .remove-btn {
+      color: #2680c0;
+      font-size: 0.85rem;
+      letter-spacing: 0.25rem;
+      background: transparent;
+    }
+
+    .increase-btn,
+    .decrease-btn {
+      width: 1.5rem;
+      color: var(--skyblue);
+    }
+
+    .amount {
+      line-height: 1;
+      text-align: center;
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+  }
+
+  footer {
+    margin-top: 4rem;
+    text-align: center;
+
+    hr {
+      border-width: 0.25px;
+      border-color: transparent;
+      background: var(--grayish-blue);
+    }
+
+    h4 {
+      display: flex;
+      margin-top: 1rem;
+      font-size: 1.15rem;
+      letter-spacing: 2px;
+      font-family: cursive;
+      text-transform: capitalize;
+      justify-content: space-between;
+    }
+
+    .clear-btn {
+      font-size: 1rem;
+      color: darkred;
+      font-weight: 500;
+      letter-spacing: 2px;
+      border-radius: 0.35rem;
+      padding: 0.35rem 0.75rem;
+      text-transform: uppercase;
+      border: 1px solid darkred;
+
+      &:hover {
+        color: white;
+        background: darkred;
+      }
+    }
+  }
+}

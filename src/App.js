@@ -1,8 +1,8 @@
-import Submenus from "./components/Submenus/Submenus";
+import Cart from "./components/Cart/Cart";
 
 function App() {
     return (
-        <Submenus />
+        <Cart />
     )
 }
 
