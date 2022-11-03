@@ -1,0 +1,118 @@
+.nav {
+    background: white;
+  
+    &-container {
+      width: 90vw;
+      margin: auto;
+      height: 4.5rem;
+      display: block;
+    }
+  
+    li {
+      list-style: none;
+    }
+  
+    a {
+      color: black;
+      margin-right: 0;
+      text-decoration: none;
+      transition: var(--transition);
+  
+      &:hover {
+        opacity: 0.75;
+        color: var(--skyblue);
+      }
+    }
+  
+    &-header {
+      width: 100%;
+      display: flex;
+      height: 4.5rem;
+      font-size: 1.45rem;
+      align-items: center;
+      color: var(--skyblue);
+      justify-content: space-between;
+    }
+  
+    &-toggle {
+      margin-top: 0.5rem;
+      font-size: 1.45rem;
+      color: var(--skyblue);
+      background: transparent;
+    }
+  
+    &-links {
+      height: 0;
+      display: block;
+      overflow: hidden;
+      font-size: 1.1rem;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      background: white;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+  
+      a {
+        display: block;
+        padding: 1rem 0 1rem 2rem;
+      }
+    }
+  
+    .show-links {
+      height: 10rem;
+  
+      a:hover {
+        padding-left: 2.5rem;
+        color: var(--skyblue);
+        background: #b3dfff83;
+      }
+    }
+  
+    &-social {
+      display: none;
+      font-size: 1.4rem;
+      align-items: center;
+      justify-content: center;
+  
+      a {
+        margin-right: 1.25rem;
+        color: var(--skyblue);
+      }
+    }
+  
+    @media screen and (min-width: 800px) {
+      .nav {
+        &-container {
+          width: 85vw;
+          display: flex;
+        }
+  
+        &-header {
+          width: auto;
+        }
+  
+        &-toggle {
+          display: none;
+        }
+  
+        &-links {
+          height: auto;
+          display: flex;
+          position: static;
+  
+          a {
+            padding: 0;
+            display: inline;
+            margin-right: 3.5rem;
+          }
+        }
+  
+        &-social {
+          display: flex;
+        }
+      }
+    }
+  }
+  

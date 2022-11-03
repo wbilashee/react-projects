@@ -1,8 +1,8 @@
-import SideModal from "./components/SideModal/SideModal";
+import Submenus from "./components/Submenus/Submenus";
 
 function App() {
     return (
-        <SideModal />
+        <Submenus />
     )
 }
 
