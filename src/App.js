@@ -1,8 +1,8 @@
-import MarkdownPreview from "./components/MarkdownPreview/MarkdownPreview";
+import RandomPerson from "./components/RandomPerson/RandomPerson";
 
 function App() {
     return (
-        <MarkdownPreview />
+        <RandomPerson />
     )
 }
 
