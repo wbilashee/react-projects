@@ -1,0 +1,146 @@
+.cocktails {
+  margin: 4rem auto;
+
+  .search-form {
+    width: 40vw;
+    margin: auto;
+
+    @media screen and (max-width: 992px) {
+      width: 65vw;
+    }
+
+    input {
+      border: 0;
+      outline: 0;
+      width: 100%;
+      font-weight: 500;
+      font-size: 1.05rem;
+      font-family: inherit;
+      border-radius: 0.5rem;
+      padding: 1rem 0.9375rem;
+    }
+  }
+
+  &-container {
+    width: 85vw;
+    display: grid;
+    margin: 4rem auto;
+    position: relative;
+    grid-gap: 3.125rem 3.125rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .cocktail {
+      position: relative;
+      background: white;
+      margin-bottom: 1.875rem;
+      border-radius: 0.5rem;
+      transition: var(--transition);
+      box-shadow: var(--light-shadow);
+
+      &:hover {
+        transform: scale(1.005);
+      }
+
+      img {
+        width: 100%;
+        display: block;
+        height: 16.75rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        border: 1rem solid white;
+        transition: var(--transition);
+
+        &:hover {
+          filter: blur(2px);
+        }
+      }
+
+      h3 {
+        position: absolute;
+        bottom: -1rem;
+        right: -1rem;
+        color: white;
+        margin-bottom: 0;
+        text-align: center;
+        font-size: 1.875rem;
+        border-radius: 0.5rem;
+        font-family: monospace;
+        text-transform: uppercase;
+        padding: 0.9375rem 1.875rem;
+        background: var(--grayish-blue);
+      }
+    }
+  }
+}
+
+.drink-title {
+  margin: 3rem auto;
+}
+
+.single-drink {
+  width: 85vw;
+  display: grid;
+  position: relative;
+  margin: 4.375rem auto;
+  grid-gap: 2.5rem 2.5rem;
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .drink {
+    &-img {
+      width: 100%;
+      height: 25rem;
+      object-fit: cover;
+      display: block;
+      border-radius: 0.5rem;
+      border: 10px solid white;
+    }
+
+    p {
+      line-height: 2;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    &-data {
+      color: #fe4f60;
+      font-size: 1.05rem;
+      margin-right: 1rem;
+      background: #fac2c8;
+      border-radius: 0.25rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
+
+.drink-btn {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 1.25rem;
+  background: #fe4f60;
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  text-transform: capitalize;
+
+  &:hover {
+    background: #e34757;
+  }
+}
+
+.not-found {
+  display: grid;
+  place-items: center;
+}

@@ -1,8 +1,8 @@
-import Cart from "./components/Cart/Cart";
+import Cocktails from "./components/Cocktails/Cocktails";
 
 function App() {
     return (
-        <Cart />
+        <Cocktails />
     )
 }
 
