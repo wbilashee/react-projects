@@ -1,8 +1,8 @@
-import RandomPerson from "./components/RandomPerson/RandomPerson";
+import Pagination from "./components/Pagination/Pagination";
 
 function App() {
     return (
-        <RandomPerson />
+        <Pagination />
     )
 }
 
