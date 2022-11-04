@@ -1,8 +1,8 @@
-import Pagination from "./components/Pagination/Pagination";
+import StockPhotos from "./components/StockPhotos/StockPhotos";
 
 function App() {
     return (
-        <Pagination />
+        <StockPhotos />
     )
 }
 
