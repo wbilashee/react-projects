@@ -1,0 +1,47 @@
+.mode {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+
+  &.light {
+    color: #ffd480;
+    background: #f1f5f8;
+  }
+
+  &.dark {
+    color: #ffffff;
+    background: #282c35;
+  }
+
+  &-container {
+    width: 45vw;
+    height: 15rem;
+    display: grid;
+    position: relative;
+    place-items: center;
+    border-radius: 0.5rem;
+    background: dimgrey;
+
+    @media screen and (max-width: 992px) {
+      width: 65vw;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 85vw;
+    }
+
+    button {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      font-size: 1.75rem;
+      color: inherit;
+      background: transparent;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
