@@ -6,7 +6,7 @@ import Photo from "./Photo";
 import loadingImg from "../../images/loading.gif";
 
 export default function StockPhotos() {
-    const client = createClient(process.env.REACT_APP_KEY);
+    const client = createClient(process.env.REACT_APP_PEXELS_KEY);
     const [page, setPage] = useState(1);
     const [photos, setPhotos] = useState([]);
     const [query, setQuery] = useState("fruits");

@@ -1,8 +1,8 @@
-import DarkMode from "./components/DarkMode/DarkMode";
+import Movies from "./components/Movies/Movies";
 
 function App() {
     return (
-        <DarkMode />
+        <Movies />
     )
 }
 
