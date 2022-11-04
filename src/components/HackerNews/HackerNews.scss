@@ -1,0 +1,72 @@
+.hacker-news {
+  width: 85vw;
+  margin: 4rem auto;
+
+  .btn-container {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 1.5rem;
+    justify-content: center;
+
+    p {
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: var(--grayish-blue);
+    }
+
+    button {
+      margin: 1rem;
+      color: white;
+      font-weight: 600;
+      border-radius: 0.25rem;
+      letter-spacing: 0.1rem;
+      padding: 0.25rem 0.5rem;
+      background: var(--skyblue);
+      text-transform: capitalize;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .stories {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+
+    .story {
+      line-height: 1.75;
+      padding: 1rem 2rem;
+      background: white;
+      border-radius: 0.5rem;
+
+      &-title {
+        font-size: 1rem;
+      }
+
+      &-info {
+        color: var(--grayish-blue);
+      }
+
+      &-link {
+        font-size: 0.875rem;
+        color: var(--skyblue);
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+
+      .remove-btn {
+        color: darkred;
+        margin-left: 1rem;
+        font-size: 0.875rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

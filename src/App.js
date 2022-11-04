@@ -1,8 +1,8 @@
-import Movies from "./components/Movies/Movies";
+import HackerNews from "./components/HackerNews/HackerNews";
 
 function App() {
     return (
-        <Movies />
+        <HackerNews />
     )
 }
 
