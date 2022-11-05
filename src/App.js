@@ -1,8 +1,8 @@
-import RandomQuote from "./components/RandomQuote/RandomQuote";
+import DrumMachine from "./components/DrumMachine/DrumMachine";
 
 function App() {
     return (
-        <RandomQuote />
+        <DrumMachine />
     )
 }
 
