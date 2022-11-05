@@ -1,8 +1,8 @@
-import Calculator from "./components/Calculator/Calculator";
+import Pomodoro from "./components/Pomodoro/Pomodoro";
 
 function App() {
     return (
-        <Calculator />
+        <Pomodoro />
     )
 }
 
