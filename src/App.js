@@ -1,8 +1,8 @@
-import HackerNews from "./components/HackerNews/HackerNews";
+import Quiz from "./components/Quiz/Quiz";
 
 function App() {
     return (
-        <HackerNews />
+        <Quiz />
     )
 }
 
