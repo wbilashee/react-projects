@@ -1,8 +1,8 @@
-import DrumMachine from "./components/DrumMachine/DrumMachine";
+import Calculator from "./components/Calculator/Calculator";
 
 function App() {
     return (
-        <DrumMachine />
+        <Calculator />
     )
 }
 
