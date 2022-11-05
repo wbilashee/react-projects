@@ -1,8 +1,8 @@
-import Quiz from "./components/Quiz/Quiz";
+import RandomQuote from "./components/RandomQuote/RandomQuote";
 
 function App() {
     return (
-        <Quiz />
+        <RandomQuote />
     )
 }
 
