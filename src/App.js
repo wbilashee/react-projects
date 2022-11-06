@@ -1,8 +1,8 @@
-import Pomodoro from "./components/Pomodoro/Pomodoro";
+import Home from "./components/Home/Home";
 
 function App() {
     return (
-        <Pomodoro />
+        <Home />
     )
 }
 
