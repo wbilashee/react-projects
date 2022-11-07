@@ -54,7 +54,12 @@
 
     .single-movie {
       display: grid;
+      row-gap: 2rem;
       grid-template-columns: 1fr 2fr;
+
+      @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
 
       img {
         width: 100%;
@@ -62,6 +67,10 @@
 
       &-info {
         padding: 0 2rem;
+
+        @media screen and (max-width: 768px) {
+          padding: 0;
+        }
 
         h2 {
           font-size: 2.5rem;
