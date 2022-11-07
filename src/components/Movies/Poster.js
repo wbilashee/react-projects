@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Poster({ imdbID, Poster, Title, Year, }) {
     return (
-        <Link to={`/movies/${imdbID}`}>
+        <Link to={`movie/${imdbID}`}>
             <div className="poster">
                 <img src={Poster} alt={imdbID} />
                 <div className="poster-info">

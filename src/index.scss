@@ -101,3 +101,20 @@ button,
     border-radius: 0.5rem;
   }
 }
+
+.not-found {
+  display: grid;
+  margin-top: 5rem;
+  place-items: center;
+
+  .button {
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    letter-spacing: 0.05rem;
+    background: var(--skyblue);
+  }
+}

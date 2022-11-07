@@ -82,7 +82,7 @@ export default function Cocktail() {
                                 return <span key={index}>{item}, </span>;
                             })}
                         </p>
-                        <Link to={"/"}>
+                        <Link to={"/Cocktails"}>
                             <button className="drink-btn">all cocktails</button>
                         </Link>
                     </article>

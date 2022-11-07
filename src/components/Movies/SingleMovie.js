@@ -12,7 +12,11 @@ export default function SingleMovie() {
             setLoading(true);
             const response = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=${process.env.REACT_APP_MOVIES_KEY}`);
             const data = await response.json();
-            setMovie(data);
+            if (data.Response === "False") {
+                setMovie(null);
+            } else {
+                setMovie(data);
+            }
             setLoading(false);
         }
         fetchSingleMovie();
@@ -25,19 +29,23 @@ export default function SingleMovie() {
     }
 
     if (!movie) {
-        return <h2 className="title">No movie found</h2>
+        return <main className="movies-container">
+            <h2 className="title">No movie found</h2>
+        </main>
     } else {
         const { Poster, Title, Plot, Actors } = movie;
         return (
-            <section className="single-movie">
-                <img src={Poster} alt={Title} />
-                <div className="single-movie-info">
-                    <h2>{Title}</h2>
-                    <h4>{Plot}</h4>
-                    <h4>Actors: {Actors}</h4>
-                    <Link to={"/"} className="btn">Back to movies</Link>
-                </div>
-            </section>
+            <main className="movies-container">
+                <section className="single-movie">
+                    <img src={Poster} alt={Title} />
+                    <div className="single-movie-info">
+                        <h2>{Title}</h2>
+                        <h4>{Plot}</h4>
+                        <h4>Actors: {Actors}</h4>
+                        <Link to={"/Movies"} className="btn">Back to movies</Link>
+                    </div>
+                </section>
+            </main>
         )
     }
 }
