@@ -34,7 +34,7 @@ const projects = [
         component: OurStaff,
     }, {
         id: 2,
-        title: "Trips",
+        title: "Tours",
         image: "https://res.cloudinary.com/dhhvnduts/image/upload/v1667913524/tours_hzhn4w.png",
         component: Tours,
     }, {

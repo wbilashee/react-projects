@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.scss";
+import projects from "./data";
 import girl from "../../images/girl.png";
 
 export default function Home() {
@@ -25,6 +26,22 @@ export default function Home() {
                     </div>
                 </div>
             </header>
+            <section className="projects">
+                <div className="projects-container">
+                    {projects && projects.map(item => {
+                        const { id, image, title } = item;
+                        const link = encodeURIComponent(title);
+                        return <a key={id} href={`/${link}`} className="tile">
+                            <div className="tile-img">
+                                <img src={image} alt={title} />
+                            </div>
+                            <div className="tile-info">
+                                <h3>{title}</h3>
+                            </div>
+                        </a>
+                    })}
+                </div>
+            </section>
         </section>
     )
 }
