@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.scss";
 import projects from "./data";
 import girl from "../../images/girl.png";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -31,14 +32,14 @@ export default function Home() {
                     {projects && projects.map(item => {
                         const { id, image, title } = item;
                         const link = encodeURIComponent(title);
-                        return <a key={id} href={`/${link}`} className="tile">
+                        return <Link key={id} to={`/${link}`} className="tile">
                             <div className="tile-img">
                                 <img src={image} alt={title} />
                             </div>
                             <div className="tile-info">
                                 <h3>{title}</h3>
                             </div>
-                        </a>
+                        </Link>
                     })}
                 </div>
             </section>
