@@ -28,4 +28,4 @@
 26. Calculator
 27. Pomodoro Clock
 
-- Live Site URL: [https://react-projects.vercel.app]
+- Live Site URL: [https://react-projects-wbilashee.vercel.app/]
